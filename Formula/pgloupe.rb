@@ -1,25 +1,25 @@
 class Pgloupe < Formula
   desc "A close look at your Postgres logs and query stats."
   homepage "https://github.com/vtrbraga/pgloupe"
-  version "0.1.0-alpha.2"
+  version "0.1.0-alpha.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.2/pgloupe-aarch64-apple-darwin.tar.gz"
-      sha256 "50f3c4ae13892c51d95a30174b7be0c49dc1f7f3ea80a128d0d1c7a8cf1c6003"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.3/pgloupe-aarch64-apple-darwin.tar.gz"
+      sha256 "1421bbecf32bb9b40dbda024661c9d0ee9265ad0b4872030ff8aa1f6786ce765"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.2/pgloupe-x86_64-apple-darwin.tar.gz"
-      sha256 "eca5471bc019db2e943ef754d114ac1a21226eb78b521da127b5a877cbffa703"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.3/pgloupe-x86_64-apple-darwin.tar.gz"
+      sha256 "34f3ccd2eb4959f39de573d9210cbe1b18add4eb0da123241a7c35733fdf8275"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.2/pgloupe-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b2400b6ea7a056b274aadd2e68b0d7c91020df222237c5112217c05f5bb973f7"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.3/pgloupe-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e161d7cb60a49663bc692c7bc7755587f34a7cd55ba8ed16296c6d77ba9253bd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.2/pgloupe-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bc72a326467520aa430e35586bd59c01a817f8675178448172cf68f032e340d9"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.0-alpha.3/pgloupe-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3530685569c57c6a9ebdb03b0fc63ddce4cb3d795e7e36df8437fb2408032566"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
