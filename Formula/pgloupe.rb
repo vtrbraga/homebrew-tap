@@ -1,25 +1,25 @@
 class Pgloupe < Formula
   desc "A close look at your Postgres logs and query stats."
   homepage "https://github.com/vtrbraga/pgloupe"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.2/pgloupe-aarch64-apple-darwin.tar.gz"
-      sha256 "9b72b404080c9577f8ccd556e26663dc7b95bdec42895bd8cd3655813d74b6d5"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.3/pgloupe-aarch64-apple-darwin.tar.gz"
+      sha256 "f7288fc10582114151a058578b8393357e3d85823d4956d3f7d031802503233f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.2/pgloupe-x86_64-apple-darwin.tar.gz"
-      sha256 "f0cb22e94bd4706feb2be4053fed3295216fa9c6caf12c16f2c06cbf22b15209"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.3/pgloupe-x86_64-apple-darwin.tar.gz"
+      sha256 "6095257417bc93b1c11401de21425fb268cca13e58eff3f5f870a2abb843f6a9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.2/pgloupe-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8e94f2434b179fa8b1d59a98d08cdded2263539e1eb14c373d53c258bbf35620"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.3/pgloupe-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "61d3b3efa9417c7c5e76ceb962bb81933b07dea5c8ad646eee8bb779ffeaf882"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.2/pgloupe-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0ea5e3cc9cca538047474195a0eb762aa5591a477a0bf73119805369e382b959"
+      url "https://github.com/vtrbraga/pgloupe/releases/download/v0.1.3/pgloupe-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f7edddaec77ae4894f75106a17701e1f71a33cecaa33bc979e89e831cee25442"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
